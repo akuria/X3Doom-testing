@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>My first X3DOM page</title>      
+  <script type='text/javascript' src='http://www.x3dom.org/download/x3dom.js'> </script> 
+  <link rel='stylesheet' type='text/css' href='http://www.x3dom.org/download/x3dom.css'></link>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body style="background:#22a067;">
+  <h1>Hello, X3DOM!</h1> 
+    <p>This is my first html page with some 3d objects.</p>
+
+    <x3d id="x3d"> 
+        <scene> 
+          <shape> 
+            <appearance> 
+              <material diffuseColor='1 0 0'></material> 
+            </appearance> 
+            <box></box> 
+          </shape> 
+          <transform translation='-3 0 0'> 
+          <shape> 
+            <appearance> 
+              <material diffuseColor='0 1 0'></material> 
+            </appearance> 
+            <cone></cone> 
+          </shape> 
+          </transform> 
+          <transform translation='3 0 0'> 
+          <shape> 
+            <appearance> 
+              <material diffuseColor='0 0 1'></material> 
+            </appearance> 
+            <sphere></sphere> 
+          </shape> 
+          </transform> 
+        </scene> 
+    </x3d>
+
+
+</body>
+</html>
